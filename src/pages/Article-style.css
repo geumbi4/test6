@@ -1,0 +1,36 @@
+  /* 메모장 앱의 전체 스타일을 설정합니다. */
+  .memo-app {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* 사용자가 메모를 입력할 수 있는 textarea의 스타일을 설정합니다. */
+.memo-input {
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* "Save Memo" 버튼의 스타일을 설정합니다. */
+  button {
+    display: block;
+    background-color: #365486;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* 저장된 메모들의 출력 영역 스타일을 설정합니다. */
+  .memo-list {
+    margin-top: 20px;
+  }
