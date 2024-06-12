@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";    
@@ -11,7 +11,7 @@ import Articles from "./pages/Articles";
 
 const App = () => {
   return (
-    <Routes>
+<BrowserRouter basename={process.env.PUBLIC_URL}>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/study" element={<Study />} />
@@ -20,7 +20,7 @@ const App = () => {
       <Route path="/articles" element={<Articles />}>
         <Route path=":id" element={<Article />} />
       </Route>
-    </Routes>
+    </BrowserRouter>
   );
 };
 export default App;
